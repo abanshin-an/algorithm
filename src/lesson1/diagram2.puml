@@ -1,0 +1,22 @@
+@startuml
+start
+:a,n;
+:res=1, a2 = a*a ; i=1;
+if (n > 0) then (yes)
+if (n mod 2 == 0) then
+    :n2=n;
+else
+    :n2=n-1;
+endif
+while (i<n2)
+  :res=res*a2;
+  :i=i+2;
+end while
+if (n != n2 ) then
+:res=res*a;
+endif
+endif
+:print res ;
+
+stop
+@enduml
