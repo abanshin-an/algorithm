@@ -1,0 +1,13 @@
+@startuml
+start
+:a,n;
+:res=1, i=1;
+if (n > 0) then (yes)
+while (i<n)
+  :res=res*a;
+  :i=i+1;
+end while
+endif
+:res ;
+stop
+@enduml
