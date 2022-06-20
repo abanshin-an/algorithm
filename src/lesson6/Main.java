@@ -164,7 +164,7 @@ public class Main {
             }
             return true;
         }
-        // по материалам  https://translate.google.com/?sl=ru&tl=en&text=количество%20элементов%20деревьев&op=translate
+
         private TreeNode getSuccessor(TreeNode deleted) {
             TreeNode successorParent = deleted;
             TreeNode successor = deleted;
@@ -182,6 +182,8 @@ public class Main {
             return successor;
         }
 
+        // по материалам https://www.baeldung.com/java-balanced-binary-tree
+        //               https://www.baeldung.com/java-print-binary-tree-diagram
         public boolean isBalanced() {
             return isBalancedRecursive(root, -1).isBalanced;
         }
